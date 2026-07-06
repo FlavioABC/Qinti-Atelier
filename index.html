@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="meta.title"></title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          class="brand-link"
+          href="#home"
+          data-nav-target="home"
+          data-i18n-attr="aria-label:brand.homeLabel"
+        >
+          <span class="brand-mark" data-i18n="brand.mark" aria-hidden="true"></span>
+          <span class="brand-name" data-i18n="brand.name"></span>
+        </a>
+
+        <div class="header-controls">
+        <nav class="primary-nav" data-i18n-attr="aria-label:navigation.label">
+          <button class="nav-link" type="button" data-nav-target="home" aria-current="page">
+          </button>
+          <button class="nav-link" type="button" data-nav-target="about">
+          </button>
+          <button class="nav-link" type="button" data-nav-target="catalog">
+          </button>
+          <button class="nav-link" type="button" data-nav-target="contact">
+          </button>
+        </nav>
+
+          <div class="language-switch" role="group" data-i18n-attr="aria-label:language.label">
+            <button
+              class="language-option"
+              type="button"
+              data-language-option="english"
+              data-i18n="language.english"
+              aria-pressed="true"
+            ></button>
+            <button
+              class="language-option"
+              type="button"
+              data-language-option="spanish"
+              data-i18n="language.spanish"
+              aria-pressed="false"
+            ></button>
+          </div>
+        </div>
+      </header>
+
+      <main id="app" class="site-main">
+        <section
+          class="page-section page-section--active"
+          data-page="home"
+          data-i18n-attr="aria-label:pages.home"
+        >
+          <div class="home-page">
+            <div class="home-visual" data-i18n-attr="aria-label:home.artworkLabel">
+              <div class="rotating-artwork" aria-hidden="true">
+                <div
+                  class="artwork-side artwork-side--front"
+                >
+                  <img
+                    class="artwork-image"
+                    data-placeholder-image
+                    src="images/home/hummingbird-placeholder.webp"
+                    alt=""
+                  >
+                </div>
+                <div class="artwork-side artwork-side--back">
+                  <span
+                    class="artwork-variant artwork-variant--one"
+                  >
+                    <img
+                      class="artwork-image"
+                      data-placeholder-image
+                      src="images/catalog/competition/competition-01-placeholder.webp"
+                      alt=""
+                    >
+                  </span>
+                  <span
+                    class="artwork-variant artwork-variant--two"
+                  >
+                    <img
+                      class="artwork-image"
+                      data-placeholder-image
+                      src="images/catalog/training/training-01-placeholder.webp"
+                      alt=""
+                    >
+                  </span>
+                  <span
+                    class="artwork-variant artwork-variant--three"
+                  >
+                    <img
+                      class="artwork-image"
+                      data-placeholder-image
+                      src="images/home/leotard-placeholder.webp"
+                      alt=""
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="home-content">
+              <div class="home-actions" data-i18n-attr="aria-label:home.actionsLabel">
+                <button class="home-action" type="button" data-nav-target="about" data-i18n="home.actions.about"></button>
+                <button class="home-action" type="button" data-nav-target="catalog" data-i18n="home.actions.catalog"></button>
+                <button class="home-action" type="button" data-nav-target="contact" data-i18n="home.actions.contact"></button>
+              </div>
+              <p class="home-note" data-i18n="home.note"></p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="page-section"
+          data-page="about"
+          data-i18n-attr="aria-label:pages.about"
+          hidden
+        >
+          <div class="about-page">
+            <header class="about-intro">
+              <p class="section-kicker" data-i18n="about.kicker"></p>
+              <h1 class="section-title" data-i18n="about.title"></h1>
+              <p class="section-lead" data-i18n="about.lead"></p>
+            </header>
+
+            <div class="about-sections">
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/our-story-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.story.title"></h2>
+                  <p data-i18n="about.sections.story.text"></p>
+                </div>
+              </article>
+
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/experience-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.experience.title"></h2>
+                  <p data-i18n="about.sections.experience.text"></p>
+                </div>
+              </article>
+
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/sketch-to-performance-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.sketch.title"></h2>
+                  <p data-i18n="about.sections.sketch.text"></p>
+                </div>
+              </article>
+
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/design-process-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.process.title"></h2>
+                  <p data-i18n="about.sections.process.text"></p>
+                </div>
+              </article>
+
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/made-in-peru-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.peru.title"></h2>
+                  <p data-i18n="about.sections.peru.text"></p>
+                </div>
+              </article>
+
+              <article class="about-section">
+                <figure class="about-figure">
+                  <img
+                    class="about-image"
+                    data-placeholder-image
+                    src="images/about/designed-for-world-placeholder.webp"
+                    alt=""
+                    loading="lazy"
+                  >
+                </figure>
+                <div class="about-copy">
+                  <h2 data-i18n="about.sections.world.title"></h2>
+                  <p data-i18n="about.sections.world.text"></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section
+          class="page-section"
+          data-page="catalog"
+          data-i18n-attr="aria-label:pages.catalog"
+          hidden
+        >
+          <div class="catalog-page">
+            <header class="catalog-intro">
+              <p class="section-kicker" data-i18n="catalog.kicker"></p>
+              <h1 class="section-title catalog-title" data-i18n="catalog.title"></h1>
+              <p class="section-lead" data-i18n="catalog.lead"></p>
+            </header>
+
+            <div class="catalog-category-selector" role="group" data-i18n-attr="aria-label:catalog.categoryLabel">
+              <button class="category-option" type="button" aria-pressed="true" data-catalog-category="training" data-i18n="catalog.categories.training"></button>
+              <button class="category-option" type="button" aria-pressed="false" data-catalog-category="competition" data-i18n="catalog.categories.competition"></button>
+            </div>
+
+            <article class="catalog-product" data-i18n-attr="aria-label:catalog.productLabel">
+              <figure class="catalog-product-media" data-brush-reveal>
+                <img
+                  class="catalog-product-image"
+                  data-placeholder-image
+                  src=""
+                  alt=""
+                  loading="lazy"
+                  data-catalog-image
+                >
+              </figure>
+
+              <div class="catalog-product-details">
+                <div class="catalog-product-heading">
+                  <p class="catalog-product-category" data-catalog-category-label></p>
+                  <h2 data-catalog-name></h2>
+                  <p data-catalog-description></p>
+                </div>
+
+                <div class="catalog-control-group">
+                  <p class="catalog-control-label" data-i18n="catalog.controls.colors"></p>
+                  <div class="catalog-swatches" role="group" data-i18n-attr="aria-label:catalog.controls.colors">
+                    <button class="catalog-swatch" type="button" data-catalog-swatch data-color-index="0"></button>
+                    <button class="catalog-swatch" type="button" data-catalog-swatch data-color-index="1"></button>
+                    <button class="catalog-swatch" type="button" data-catalog-swatch data-color-index="2"></button>
+                    <button class="catalog-swatch" type="button" data-catalog-swatch data-color-index="3"></button>
+                  </div>
+                </div>
+
+                <div class="catalog-control-group">
+                  <p class="catalog-control-label" data-i18n="catalog.controls.sizes"></p>
+                  <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
+                    <button class="catalog-size-option" type="button" data-catalog-size="XS" aria-pressed="false">XS</button>
+                    <button class="catalog-size-option" type="button" data-catalog-size="S" aria-pressed="false">S</button>
+                    <button class="catalog-size-option" type="button" data-catalog-size="M" aria-pressed="true">M</button>
+                    <button class="catalog-size-option" type="button" data-catalog-size="L" aria-pressed="false">L</button>
+                    <button class="catalog-size-option" type="button" data-catalog-size="XL" aria-pressed="false">XL</button>
+                    <button class="catalog-size-option" type="button" data-catalog-size="XXL" aria-pressed="false">XXL</button>
+                  </div>
+                </div>
+
+                <div class="catalog-actions">
+                  <button
+                    class="catalog-action"
+                    type="button"
+                    data-catalog-customize-toggle
+                    aria-expanded="false"
+                    aria-controls="catalog-customization"
+                    data-i18n="catalog.controls.customize"
+                  ></button>
+                  <div class="catalog-customization" id="catalog-customization" hidden>
+                    <textarea
+                      class="catalog-customization-field"
+                      data-catalog-customization
+                      rows="5"
+                      data-i18n-attr="placeholder:catalog.controls.customizationPlaceholder;aria-label:catalog.controls.customizationPlaceholder"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="catalog-action catalog-action--primary"
+                    type="button"
+                    data-whatsapp-order
+                    data-i18n="catalog.controls.order"
+                  ></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          class="page-section"
+          data-page="contact"
+          data-i18n-attr="aria-label:pages.contact"
+          hidden
+        ></section>
+      </main>
+    </div>
+    <script type="application/json" data-language-inline="english">
+      {
+        "meta": {
+          "htmlLang": "en",
+          "title": "QINTI"
+        },
+        "brand": {
+          "homeLabel": "QINTI home",
+          "mark": "Q",
+          "name": "QINTI"
+        },
+        "navigation": {
+          "label": "Primary navigation",
+          "home": "Home",
+          "about": "About",
+          "catalog": "Catalog",
+          "contact": "Contact"
+        },
+        "language": {
+          "label": "Language",
+          "english": "English",
+          "spanish": "Spanish"
+        },
+        "home": {
+          "artworkLabel": "Rotating hummingbird and leotard artwork",
+          "actionsLabel": "Home page links",
+          "actions": {
+            "about": "About",
+            "catalog": "Catalog",
+            "contact": "Contact"
+          },
+          "note": "Designed by hand. Created for performance."
+        },
+        "about": {
+          "kicker": "About QINTI",
+          "title": "An atelier shaped by movement and art.",
+          "lead": "Every design begins as a hand-painted idea before it becomes a leotard made for performance.",
+          "sections": {
+            "story": {
+              "title": "Our Story",
+              "text": "QINTI was created as a studio for artistic gymnastics apparel, where drawing, color and technique meet the needs of athletes and teams."
+            },
+            "experience": {
+              "title": "13 Years of Experience",
+              "text": "For more than thirteen years, the atelier has worked with clubs, academies and gymnasts who need garments that feel refined and reliable."
+            },
+            "sketch": {
+              "title": "From Sketch to Performance",
+              "text": "Each piece starts on paper, with painted lines and color studies that guide the final shape, details and visual rhythm."
+            },
+            "process": {
+              "title": "Handcrafted Design Process",
+              "text": "The process is careful and personal, moving from concept to fabric with attention to proportion, finish and the presence of each design."
+            },
+            "peru": {
+              "title": "Made in Peru",
+              "text": "QINTI is made in Peru, carrying a studio sensibility rooted in craft, patience and expressive detail."
+            },
+            "world": {
+              "title": "Designed for the World",
+              "text": "The work travels beyond Peru to athletes and teams who want a leotard that feels distinctive, elegant and created with intention."
+            }
+          }
+        },
+        "catalog": {
+          "kicker": "Catalog",
+          "title": "A quiet space for each design.",
+          "lead": "One leotard is presented at a time, with space for silhouette, color, size and custom details.",
+          "categoryLabel": "Catalog categories",
+          "categories": {
+            "training": "Training",
+            "competition": "Competition"
+          },
+          "productLabel": "Catalog product preview",
+          "controls": {
+            "colors": "Colors",
+            "sizes": "Sizes",
+            "customize": "Customize My Design",
+            "customizationPlaceholder": "Describe your ideas, colors, inspiration or special requests.",
+            "order": "WhatsApp Order"
+          },
+          "orderMessage": {
+            "greeting": "Hello QINTI!",
+            "intro": "I am interested in this design.",
+            "category": "Category:",
+            "model": "Model:",
+            "color": "Color:",
+            "size": "Size:",
+            "customization": "Customization:",
+            "thanks": "Thank you!"
+          }
+        },
+        "pages": {
+          "home": "Home",
+          "about": "About",
+          "catalog": "Catalog",
+          "contact": "Contact"
+        }
+      }
+    </script>
+    <script type="application/json" data-language-inline="spanish">
+      {
+        "meta": {
+          "htmlLang": "es",
+          "title": "QINTI"
+        },
+        "brand": {
+          "homeLabel": "Inicio de QINTI",
+          "mark": "Q",
+          "name": "QINTI"
+        },
+        "navigation": {
+          "label": "Navegacion principal",
+          "home": "Inicio",
+          "about": "Nosotros",
+          "catalog": "Catalogo",
+          "contact": "Contacto"
+        },
+        "language": {
+          "label": "Idioma",
+          "english": "Ingles",
+          "spanish": "Espanol"
+        },
+        "home": {
+          "artworkLabel": "Arte rotatorio de colibri y leotardo",
+          "actionsLabel": "Enlaces de la pagina de inicio",
+          "actions": {
+            "about": "Nosotros",
+            "catalog": "Catalogo",
+            "contact": "Contacto"
+          },
+          "note": "Disenado a mano. Creado para el rendimiento."
+        },
+        "about": {
+          "kicker": "Sobre QINTI",
+          "title": "Un atelier formado por movimiento y arte.",
+          "lead": "Cada diseno empieza como una idea pintada a mano antes de convertirse en un leotardo hecho para el rendimiento.",
+          "sections": {
+            "story": {
+              "title": "Nuestra Historia",
+              "text": "QINTI nacio como un estudio de indumentaria para gimnasia artistica, donde dibujo, color y tecnica se unen con las necesidades de atletas y equipos."
+            },
+            "experience": {
+              "title": "13 Anos de Experiencia",
+              "text": "Durante mas de trece anos, el atelier ha trabajado con clubes, academias y gimnastas que necesitan prendas refinadas y confiables."
+            },
+            "sketch": {
+              "title": "Del Boceto al Rendimiento",
+              "text": "Cada pieza empieza en papel, con lineas pintadas y estudios de color que guian la forma final, los detalles y el ritmo visual."
+            },
+            "process": {
+              "title": "Proceso de Diseno Artesanal",
+              "text": "El proceso es cuidadoso y personal, avanzando del concepto a la tela con atencion a la proporcion, el acabado y la presencia de cada diseno."
+            },
+            "peru": {
+              "title": "Hecho en Peru",
+              "text": "QINTI esta hecho en Peru, con una sensibilidad de estudio basada en oficio, paciencia y detalle expresivo."
+            },
+            "world": {
+              "title": "Disenado para el Mundo",
+              "text": "El trabajo viaja mas alla de Peru hacia atletas y equipos que buscan un leotardo distintivo, elegante y creado con intencion."
+            }
+          }
+        },
+        "catalog": {
+          "kicker": "Catalogo",
+          "title": "Un espacio tranquilo para cada diseno.",
+          "lead": "Un leotardo se presenta a la vez, con espacio para silueta, color, talla y detalles personalizados.",
+          "categoryLabel": "Categorias del catalogo",
+          "categories": {
+            "training": "Entrenamiento",
+            "competition": "Competencia"
+          },
+          "productLabel": "Vista previa de producto del catalogo",
+          "controls": {
+            "colors": "Colores",
+            "sizes": "Tallas",
+            "customize": "Personalizar Mi Diseno",
+            "customizationPlaceholder": "Describe tus ideas, colores, inspiracion o pedidos especiales.",
+            "order": "Pedido por WhatsApp"
+          },
+          "orderMessage": {
+            "greeting": "Hola QINTI!",
+            "intro": "Estoy interesado en este diseno.",
+            "category": "Categoria:",
+            "model": "Modelo:",
+            "color": "Color:",
+            "size": "Talla:",
+            "customization": "Personalizacion:",
+            "thanks": "Gracias!"
+          }
+        },
+        "pages": {
+          "home": "Inicio",
+          "about": "Nosotros",
+          "catalog": "Catalogo",
+          "contact": "Contacto"
+        }
+      }
+    </script>
+    <script type="application/json" data-products-inline>
+{
+        "categories": {
+          "training": [
+            {
+              "id": "training-01",
+              "name": {
+                "english": "Luna Practice",
+                "spanish": "Practica Luna"
+              },
+              "description": {
+                "english": "A refined training silhouette prepared for daily studio movement.",
+                "spanish": "Una silueta refinada de entrenamiento preparada para el movimiento diario en estudio."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Pearl",
+                    "spanish": "Perla"
+                  },
+                  "value": "#f5efe4",
+                  "image": "images/catalog/training/training-01-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Sage",
+                    "spanish": "Salvia"
+                  },
+                  "value": "#8c9a82",
+                  "image": "images/catalog/training/training-01-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Rosewood",
+                    "spanish": "Palo rosa"
+                  },
+                  "value": "#9a6b65",
+                  "image": "images/catalog/training/training-01-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Ink",
+                    "spanish": "Tinta"
+                  },
+                  "value": "#2f3437",
+                  "image": "images/catalog/training/training-01-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "training-02",
+              "name": {
+                "english": "Sol Studio",
+                "spanish": "Estudio Sol"
+              },
+              "description": {
+                "english": "A warm practice design with a calm presence for repeated training.",
+                "spanish": "Un diseno calido de practica con presencia tranquila para entrenamiento constante."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Ivory",
+                    "spanish": "Marfil"
+                  },
+                  "value": "#fff7ea",
+                  "image": "images/catalog/training/training-02-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Clay",
+                    "spanish": "Arcilla"
+                  },
+                  "value": "#b98262",
+                  "image": "images/catalog/training/training-02-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Olive",
+                    "spanish": "Oliva"
+                  },
+                  "value": "#6f7657",
+                  "image": "images/catalog/training/training-02-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Charcoal",
+                    "spanish": "Carbon"
+                  },
+                  "value": "#35312d",
+                  "image": "images/catalog/training/training-02-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "training-03",
+              "name": {
+                "english": "Nube Flow",
+                "spanish": "Flujo Nube"
+              },
+              "description": {
+                "english": "A soft training model shaped for lightness and control.",
+                "spanish": "Un modelo suave de entrenamiento pensado para ligereza y control."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Mist",
+                    "spanish": "Neblina"
+                  },
+                  "value": "#d7d7d1",
+                  "image": "images/catalog/training/training-03-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Sky",
+                    "spanish": "Cielo"
+                  },
+                  "value": "#9fb6c3",
+                  "image": "images/catalog/training/training-03-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Plum",
+                    "spanish": "Ciruela"
+                  },
+                  "value": "#6f4d63",
+                  "image": "images/catalog/training/training-03-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Graphite",
+                    "spanish": "Grafito"
+                  },
+                  "value": "#4d4b48",
+                  "image": "images/catalog/training/training-03-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "training-04",
+              "name": {
+                "english": "Arena Line",
+                "spanish": "Linea Arena"
+              },
+              "description": {
+                "english": "A grounded training leotard with an understated atelier feeling.",
+                "spanish": "Un leotardo de entrenamiento sereno con sensibilidad sobria de atelier."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Sand",
+                    "spanish": "Arena"
+                  },
+                  "value": "#d9c7a8",
+                  "image": "images/catalog/training/training-04-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Moss",
+                    "spanish": "Musgo"
+                  },
+                  "value": "#73785f",
+                  "image": "images/catalog/training/training-04-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Wine",
+                    "spanish": "Vino"
+                  },
+                  "value": "#7a3f48",
+                  "image": "images/catalog/training/training-04-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Black",
+                    "spanish": "Negro"
+                  },
+                  "value": "#242220",
+                  "image": "images/catalog/training/training-04-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "training-05",
+              "name": {
+                "english": "Marea Motion",
+                "spanish": "Movimiento Marea"
+              },
+              "description": {
+                "english": "A fluid practice piece arranged for rhythm and focus.",
+                "spanish": "Una pieza fluida de practica pensada para ritmo y concentracion."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Foam",
+                    "spanish": "Espuma"
+                  },
+                  "value": "#edf0e9",
+                  "image": "images/catalog/training/training-05-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Teal",
+                    "spanish": "Verde azulado"
+                  },
+                  "value": "#3f7c78",
+                  "image": "images/catalog/training/training-05-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Coral",
+                    "spanish": "Coral"
+                  },
+                  "value": "#c87868",
+                  "image": "images/catalog/training/training-05-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Midnight",
+                    "spanish": "Medianoche"
+                  },
+                  "value": "#26313d",
+                  "image": "images/catalog/training/training-05-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "training-06",
+              "name": {
+                "english": "Brisa Form",
+                "spanish": "Forma Brisa"
+              },
+              "description": {
+                "english": "A light studio design prepared for clean lines and comfort.",
+                "spanish": "Un diseno ligero de estudio preparado para lineas limpias y comodidad."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Shell",
+                    "spanish": "Concha"
+                  },
+                  "value": "#f1dfd1",
+                  "image": "images/catalog/training/training-06-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Leaf",
+                    "spanish": "Hoja"
+                  },
+                  "value": "#78906f",
+                  "image": "images/catalog/training/training-06-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Mulberry",
+                    "spanish": "Mora"
+                  },
+                  "value": "#7f4f69",
+                  "image": "images/catalog/training/training-06-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Slate",
+                    "spanish": "Pizarra"
+                  },
+                  "value": "#586168",
+                  "image": "images/catalog/training/training-06-color-4-placeholder.webp"
+                }
+              ]
+            }
+          ],
+          "competition": [
+            {
+              "id": "competition-01",
+              "name": {
+                "english": "Aurora",
+                "spanish": "Aurora"
+              },
+              "description": {
+                "english": "A competition design with a luminous studio presence.",
+                "spanish": "Un diseno de competencia con presencia luminosa de estudio."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Amethyst",
+                    "spanish": "Amatista"
+                  },
+                  "value": "#7c5c95",
+                  "image": "images/catalog/competition/competition-01-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Silver",
+                    "spanish": "Plata"
+                  },
+                  "value": "#c7c3bb",
+                  "image": "images/catalog/competition/competition-01-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Petal",
+                    "spanish": "Petalo"
+                  },
+                  "value": "#d9a7a3",
+                  "image": "images/catalog/competition/competition-01-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Noir",
+                    "spanish": "Noir"
+                  },
+                  "value": "#1f1d1e",
+                  "image": "images/catalog/competition/competition-01-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "competition-02",
+              "name": {
+                "english": "Celeste",
+                "spanish": "Celeste"
+              },
+              "description": {
+                "english": "A refined competitive model with airy color balance.",
+                "spanish": "Un modelo competitivo refinado con equilibrio de color ligero."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Blue",
+                    "spanish": "Azul"
+                  },
+                  "value": "#5f8faa",
+                  "image": "images/catalog/competition/competition-02-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Pearl",
+                    "spanish": "Perla"
+                  },
+                  "value": "#f5efe4",
+                  "image": "images/catalog/competition/competition-02-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Violet",
+                    "spanish": "Violeta"
+                  },
+                  "value": "#72598f",
+                  "image": "images/catalog/competition/competition-02-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Ink",
+                    "spanish": "Tinta"
+                  },
+                  "value": "#252b31",
+                  "image": "images/catalog/competition/competition-02-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "competition-03",
+              "name": {
+                "english": "Mariposa",
+                "spanish": "Mariposa"
+              },
+              "description": {
+                "english": "A performance piece with delicate movement and expressive color.",
+                "spanish": "Una pieza de rendimiento con movimiento delicado y color expresivo."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Blush",
+                    "spanish": "Rubor"
+                  },
+                  "value": "#d7a19b",
+                  "image": "images/catalog/competition/competition-03-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Gold",
+                    "spanish": "Dorado"
+                  },
+                  "value": "#c9a55d",
+                  "image": "images/catalog/competition/competition-03-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Iris",
+                    "spanish": "Iris"
+                  },
+                  "value": "#6d6098",
+                  "image": "images/catalog/competition/competition-03-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Charcoal",
+                    "spanish": "Carbon"
+                  },
+                  "value": "#34312f",
+                  "image": "images/catalog/competition/competition-03-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "competition-04",
+              "name": {
+                "english": "Estrella",
+                "spanish": "Estrella"
+              },
+              "description": {
+                "english": "A stage-ready leotard arranged for clarity and shine.",
+                "spanish": "Un leotardo listo para escenario, compuesto para claridad y brillo."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Champagne",
+                    "spanish": "Champagne"
+                  },
+                  "value": "#d9c299",
+                  "image": "images/catalog/competition/competition-04-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Ruby",
+                    "spanish": "Rubi"
+                  },
+                  "value": "#9b2438",
+                  "image": "images/catalog/competition/competition-04-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Emerald",
+                    "spanish": "Esmeralda"
+                  },
+                  "value": "#34775b",
+                  "image": "images/catalog/competition/competition-04-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Black",
+                    "spanish": "Negro"
+                  },
+                  "value": "#201f1d",
+                  "image": "images/catalog/competition/competition-04-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "competition-05",
+              "name": {
+                "english": "Serena",
+                "spanish": "Serena"
+              },
+              "description": {
+                "english": "A balanced competition design with soft contrast and poise.",
+                "spanish": "Un diseno de competencia equilibrado, con contraste suave y aplomo."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Lilac",
+                    "spanish": "Lila"
+                  },
+                  "value": "#a18ab8",
+                  "image": "images/catalog/competition/competition-05-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Shell",
+                    "spanish": "Concha"
+                  },
+                  "value": "#ecd6c9",
+                  "image": "images/catalog/competition/competition-05-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Deep Blue",
+                    "spanish": "Azul profundo"
+                  },
+                  "value": "#2f4e70",
+                  "image": "images/catalog/competition/competition-05-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Graphite",
+                    "spanish": "Grafito"
+                  },
+                  "value": "#4b4b4b",
+                  "image": "images/catalog/competition/competition-05-color-4-placeholder.webp"
+                }
+              ]
+            },
+            {
+              "id": "competition-06",
+              "name": {
+                "english": "Opal",
+                "spanish": "Opalo"
+              },
+              "description": {
+                "english": "An expressive competition model prepared for a polished entrance.",
+                "spanish": "Un modelo expresivo de competencia preparado para una entrada pulida."
+              },
+              "colors": [
+                {
+                  "name": {
+                    "english": "Opal",
+                    "spanish": "Opalo"
+                  },
+                  "value": "#d8ddd7",
+                  "image": "images/catalog/competition/competition-06-color-1-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Mauve",
+                    "spanish": "Malva"
+                  },
+                  "value": "#9e7889",
+                  "image": "images/catalog/competition/competition-06-color-2-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Cypress",
+                    "spanish": "Cipres"
+                  },
+                  "value": "#3e675e",
+                  "image": "images/catalog/competition/competition-06-color-3-placeholder.webp"
+                },
+                {
+                  "name": {
+                    "english": "Night",
+                    "spanish": "Noche"
+                  },
+                  "value": "#23242b",
+                  "image": "images/catalog/competition/competition-06-color-4-placeholder.webp"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
+    <script defer src="js/i18n.js"></script>
+    <script defer src="js/brushReveal.js"></script>
+    <script defer src="js/catalog.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/whatsapp.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

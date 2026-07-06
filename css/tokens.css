@@ -1,0 +1,17 @@
+:root {
+  --color-page: #fbf8f1;
+  --color-surface: #fffdf8;
+  --color-text: #27221c;
+  --color-muted: #6e6255;
+  --color-border: #d9cdbd;
+  --color-accent: #8f6d42;
+  --color-focus: #5b7f95;
+
+  --font-body: Georgia, "Times New Roman", serif;
+  --font-ui: Arial, Helvetica, sans-serif;
+
+  --site-max-width: 1180px;
+  --header-height: 88px;
+  --page-padding: clamp(20px, 5vw, 64px);
+  --nav-gap: 8px;
+}

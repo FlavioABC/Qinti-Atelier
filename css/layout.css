@@ -1,0 +1,132 @@
+.site-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.site-header {
+  width: min(100% - 32px, var(--site-max-width));
+  min-height: var(--header-height);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.site-main {
+  width: min(100%, var(--site-max-width));
+  margin: 0 auto;
+}
+
+.page-section {
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--page-padding);
+}
+
+.home-page {
+  min-height: calc(100vh - var(--header-height) - (var(--page-padding) * 2));
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 96px);
+}
+
+.home-visual {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  perspective: 1200px;
+}
+
+.home-content {
+  display: grid;
+  gap: 28px;
+}
+
+.home-actions {
+  display: grid;
+  gap: 16px;
+}
+
+.about-page {
+  display: grid;
+  gap: clamp(44px, 6vw, 72px);
+}
+
+.about-intro {
+  max-width: 760px;
+  display: grid;
+  gap: 18px;
+}
+
+.about-sections {
+  display: grid;
+  gap: clamp(36px, 5vw, 64px);
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.about-copy {
+  display: grid;
+  gap: 16px;
+}
+
+.catalog-page {
+  display: grid;
+  gap: clamp(32px, 5vw, 56px);
+}
+
+.catalog-intro {
+  max-width: 780px;
+  display: grid;
+  gap: 18px;
+}
+
+.catalog-category-selector {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  justify-self: start;
+  gap: 8px;
+}
+
+.catalog-product {
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(320px, 0.9fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 80px);
+}
+
+.catalog-product-details {
+  display: grid;
+  gap: 28px;
+}
+
+.catalog-product-heading {
+  display: grid;
+  gap: 14px;
+}
+
+.catalog-control-group {
+  display: grid;
+  gap: 12px;
+}
+
+.catalog-actions {
+  display: grid;
+  gap: 12px;
+}

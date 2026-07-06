@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "htmlLang": "en",
+    "title": "QINTI"
+  },
+  "brand": {
+    "homeLabel": "QINTI home",
+    "mark": "Q",
+    "name": "QINTI"
+  },
+  "navigation": {
+    "label": "Primary navigation",
+    "home": "Home",
+    "about": "About",
+    "catalog": "Catalog",
+    "contact": "Contact"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "home": {
+    "artworkLabel": "Rotating hummingbird and leotard artwork",
+    "actionsLabel": "Home page links",
+    "actions": {
+      "about": "About",
+      "catalog": "Catalog",
+      "contact": "Contact"
+    },
+    "note": "Designed by hand. Created for performance."
+  },
+  "about": {
+    "kicker": "About QINTI",
+    "title": "An atelier shaped by movement and art.",
+    "lead": "Every design begins as a hand-painted idea before it becomes a leotard made for performance.",
+    "sections": {
+      "story": {
+        "title": "Our Story",
+        "text": "QINTI was created as a studio for artistic gymnastics apparel, where drawing, color and technique meet the needs of athletes and teams."
+      },
+      "experience": {
+        "title": "13 Years of Experience",
+        "text": "For more than thirteen years, the atelier has worked with clubs, academies and gymnasts who need garments that feel refined and reliable."
+      },
+      "sketch": {
+        "title": "From Sketch to Performance",
+        "text": "Each piece starts on paper, with painted lines and color studies that guide the final shape, details and visual rhythm."
+      },
+      "process": {
+        "title": "Handcrafted Design Process",
+        "text": "The process is careful and personal, moving from concept to fabric with attention to proportion, finish and the presence of each design."
+      },
+      "peru": {
+        "title": "Made in Peru",
+        "text": "QINTI is made in Peru, carrying a studio sensibility rooted in craft, patience and expressive detail."
+      },
+      "world": {
+        "title": "Designed for the World",
+        "text": "The work travels beyond Peru to athletes and teams who want a leotard that feels distinctive, elegant and created with intention."
+      }
+    }
+  },
+  "catalog": {
+    "kicker": "Catalog",
+    "title": "A quiet space for each design.",
+    "lead": "One leotard is presented at a time, with space for silhouette, color, size and custom details.",
+    "categoryLabel": "Catalog categories",
+    "categories": {
+      "training": "Training",
+      "competition": "Competition"
+    },
+    "productLabel": "Catalog product preview",
+    "controls": {
+      "colors": "Colors",
+      "sizes": "Sizes",
+      "customize": "Customize My Design",
+      "customizationPlaceholder": "Describe your ideas, colors, inspiration or special requests.",
+      "order": "WhatsApp Order"
+    },
+    "orderMessage": {
+      "greeting": "Hello QINTI!",
+      "intro": "I am interested in this design.",
+      "category": "Category:",
+      "model": "Model:",
+      "color": "Color:",
+      "size": "Size:",
+      "customization": "Customization:",
+      "thanks": "Thank you!"
+    }
+  },
+  "pages": {
+    "home": "Home",
+    "about": "About",
+    "catalog": "Catalog",
+    "contact": "Contact"
+  }
+}
