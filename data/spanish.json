@@ -9,92 +9,92 @@
     "name": "QINTI"
   },
   "navigation": {
-    "label": "Navegacion principal",
+    "label": "Navegación principal",
     "home": "Inicio",
     "about": "Nosotros",
-    "catalog": "Catalogo",
+    "catalog": "Catálogo",
     "contact": "Contacto"
   },
   "language": {
     "label": "Idioma",
-    "english": "Ingles",
-    "spanish": "Espanol"
+    "english": "Inglés",
+    "spanish": "Español"
   },
   "home": {
-    "artworkLabel": "Arte rotatorio de colibri y leotardo",
-    "actionsLabel": "Enlaces de la pagina de inicio",
+    "artworkLabel": "Arte rotatorio de colibrí y leotardo",
+    "actionsLabel": "Enlaces de la página de inicio",
     "actions": {
       "about": "Nosotros",
-      "catalog": "Catalogo",
+      "catalog": "Catálogo",
       "contact": "Contacto"
     },
-    "note": "Disenado a mano. Creado para el rendimiento."
+    "note": "Diseñado a mano. Creado para el rendimiento."
   },
   "about": {
     "kicker": "Sobre QINTI",
     "title": "Un atelier formado por movimiento y arte.",
-    "lead": "Cada diseno empieza como una idea pintada a mano antes de convertirse en un leotardo hecho para el rendimiento.",
+    "lead": "Cada diseño empieza como una idea pintada a mano antes de convertirse en un leotardo hecho para el rendimiento.",
     "sections": {
       "story": {
         "title": "Nuestra Historia",
-        "text": "QINTI nacio como un estudio de indumentaria para gimnasia artistica, donde dibujo, color y tecnica se unen con las necesidades de atletas y equipos."
+        "text": "QINTI nació como un estudio de indumentaria para gimnasia artística, donde dibujo, color y técnica se unen con las necesidades de atletas y equipos."
       },
       "experience": {
-        "title": "13 Anos de Experiencia",
-        "text": "Durante mas de trece anos, el atelier ha trabajado con clubes, academias y gimnastas que necesitan prendas refinadas y confiables."
+        "title": "13 Años de Experiencia",
+        "text": "Durante más de trece años, el atelier ha trabajado con clubes, academias y gimnastas que necesitan prendas refinadas y confiables."
       },
       "sketch": {
         "title": "Del Boceto al Rendimiento",
-        "text": "Cada pieza empieza en papel, con lineas pintadas y estudios de color que guian la forma final, los detalles y el ritmo visual."
+        "text": "Cada pieza empieza en papel, con líneas pintadas y estudios de color que guían la forma final, los detalles y el ritmo visual."
       },
       "process": {
-        "title": "Proceso de Diseno Artesanal",
-        "text": "El proceso es cuidadoso y personal, avanzando del concepto a la tela con atencion a la proporcion, el acabado y la presencia de cada diseno."
+        "title": "Proceso de Diseño Artesanal",
+        "text": "El proceso es cuidadoso y personal, avanzando del concepto a la tela con atención a la proporción, el acabado y la presencia de cada diseño."
       },
       "peru": {
-        "title": "Hecho en Peru",
-        "text": "QINTI esta hecho en Peru, con una sensibilidad de estudio basada en oficio, paciencia y detalle expresivo."
+        "title": "Hecho en Perú",
+        "text": "QINTI está hecho en Perú, con una sensibilidad de estudio basada en oficio, paciencia y detalle expresivo."
       },
       "world": {
-        "title": "Disenado para el Mundo",
-        "text": "El trabajo viaja mas alla de Peru hacia atletas y equipos que buscan un leotardo distintivo, elegante y creado con intencion."
+        "title": "Diseñado para el Mundo",
+        "text": "El trabajo viaja más allá de Perú hacia atletas y equipos que buscan un leotardo distintivo, elegante y creado con intención."
       }
     }
   },
   "catalog": {
-    "kicker": "Catalogo",
-    "title": "Un espacio tranquilo para cada diseno.",
-    "lead": "Un leotardo se presenta a la vez, con espacio para silueta, color, talla y detalles personalizados.",
-    "categoryLabel": "Categorias del catalogo",
+    "kicker": "Catálogo",
+    "title": "Un espacio tranquilo para cada diseño.",
+    "lead": "Un leotardo se presenta a la vez, con espacio para la silueta, el color, la talla y los detalles personalizados.",
+    "categoryLabel": "Categorías del catálogo",
     "categories": {
       "training": "Entrenamiento",
       "competition": "Competencia"
     },
-    "productLabel": "Vista previa de producto del catalogo",
+    "productLabel": "Vista previa de producto del catálogo",
     "controls": {
       "colors": "Colores",
       "sizes": "Tallas",
-      "childSizes": "Ninos",
+      "childSizes": "Niños",
       "adultSizes": "Adultos",
-      "customize": "Personalizar Mi Diseno",
-      "customizationPlaceholder": "Describe tus ideas, colores, inspiracion o pedidos especiales.",
+      "customize": "Personalizar mi diseño",
+      "customizationPlaceholder": "Describe tus ideas, colores, inspiración o pedidos especiales.",
       "order": "Pedido por WhatsApp",
       "details": "Detalles"
     },
     "orderMessage": {
-      "greeting": "Hola QINTI!",
-      "intro": "Estoy interesado en este diseno.",
-      "category": "Categoria:",
+      "greeting": "¡Hola, QINTI!",
+      "intro": "Estoy interesado en este diseño.",
+      "category": "Categoría:",
       "model": "Modelo:",
       "color": "Color:",
       "size": "Talla:",
-      "customization": "Personalizacion:",
-      "thanks": "Gracias!"
+      "customization": "Personalización:",
+      "thanks": "¡Gracias!"
     }
   },
   "contact": {
     "kicker": "Contacto",
-    "title": "Una conversacion guiada por el oficio.",
+    "title": "Una conversación guiada por el oficio.",
     "lead": "Escribe al atelier para trabajos personalizados, consultas de estudio o una consulta privada.",
     "contactMethods": {
       "title": "Contacto",
@@ -102,11 +102,11 @@
       "email": "Correo"
     },
     "visit": {
-      "title": "Visita",
-      "address": "Lima, Peru",
+      "title": "Visítanos",
+      "address": "Lima, Perú",
       "hours": "Lunes a viernes · 9:00 a 18:00",
       "social": "Instagram · Facebook",
-      "map": "Marcador de mapa"
+      "map": "Marcador del mapa"
     },
     "floating": {
       "email": "Correo",
@@ -116,7 +116,7 @@
   "pages": {
     "home": "Inicio",
     "about": "Nosotros",
-    "catalog": "Catalogo",
+    "catalog": "Catálogo",
     "contact": "Contacto"
   }
 }
