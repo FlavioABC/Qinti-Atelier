@@ -51,12 +51,15 @@
 
   const setupWhatsApp = () => {
     const orderButton = document.querySelector("[data-whatsapp-order]");
+    const floatingButton = document.querySelector("[data-floating-whatsapp]");
 
-    if (!orderButton) {
-      return;
+    if (orderButton) {
+      orderButton.addEventListener("click", openWhatsAppOrder);
     }
 
-    orderButton.addEventListener("click", openWhatsAppOrder);
+    if (floatingButton) {
+      floatingButton.addEventListener("click", openWhatsAppOrder);
+    }
   };
 
   window.QintiWhatsApp = {

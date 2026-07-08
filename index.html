@@ -20,17 +20,6 @@
         </a>
 
         <div class="header-controls">
-        <nav class="primary-nav" data-i18n-attr="aria-label:navigation.label">
-          <button class="nav-link" type="button" data-nav-target="home" aria-current="page">
-          </button>
-          <button class="nav-link" type="button" data-nav-target="about">
-          </button>
-          <button class="nav-link" type="button" data-nav-target="catalog">
-          </button>
-          <button class="nav-link" type="button" data-nav-target="contact">
-          </button>
-        </nav>
-
           <div class="language-switch" role="group" data-i18n-attr="aria-label:language.label">
             <button
               class="language-option"
@@ -110,7 +99,6 @@
                 <button class="home-action" type="button" data-nav-target="catalog" data-i18n="home.actions.catalog"></button>
                 <button class="home-action" type="button" data-nav-target="contact" data-i18n="home.actions.contact"></button>
               </div>
-              <p class="home-note" data-i18n="home.note"></p>
             </div>
           </div>
         </section>
@@ -233,15 +221,13 @@
           hidden
         >
           <div class="catalog-page">
-            <header class="catalog-intro">
-              <p class="section-kicker" data-i18n="catalog.kicker"></p>
-              <h1 class="section-title catalog-title" data-i18n="catalog.title"></h1>
-              <p class="section-lead" data-i18n="catalog.lead"></p>
-            </header>
-
-            <div class="catalog-category-selector" role="group" data-i18n-attr="aria-label:catalog.categoryLabel">
-              <button class="category-option" type="button" aria-pressed="true" data-catalog-category="training" data-i18n="catalog.categories.training"></button>
-              <button class="category-option" type="button" aria-pressed="false" data-catalog-category="competition" data-i18n="catalog.categories.competition"></button>
+            <div class="catalog-toolbar">
+              <button class="catalog-home-button" type="button" data-nav-target="home" aria-label="Home">
+                <img src="images/home/hummingbird-placeholder.webp" alt="">
+              </button>
+              <button class="catalog-category-toggle" type="button" data-catalog-category-toggle aria-pressed="false">
+                <span data-catalog-category-toggle-label></span>
+              </button>
             </div>
 
             <article class="catalog-product" data-i18n-attr="aria-label:catalog.productLabel">
@@ -256,9 +242,8 @@
                 >
               </figure>
 
-              <div class="catalog-product-details">
+              <div class="catalog-product-details" data-catalog-details-panel>
                 <div class="catalog-product-heading">
-                  <p class="catalog-product-category" data-catalog-category-label></p>
                   <h2 data-catalog-name></h2>
                   <p data-catalog-description></p>
                 </div>
@@ -275,13 +260,25 @@
 
                 <div class="catalog-control-group">
                   <p class="catalog-control-label" data-i18n="catalog.controls.sizes"></p>
-                  <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
-                    <button class="catalog-size-option" type="button" data-catalog-size="XS" aria-pressed="false">XS</button>
-                    <button class="catalog-size-option" type="button" data-catalog-size="S" aria-pressed="false">S</button>
-                    <button class="catalog-size-option" type="button" data-catalog-size="M" aria-pressed="true">M</button>
-                    <button class="catalog-size-option" type="button" data-catalog-size="L" aria-pressed="false">L</button>
-                    <button class="catalog-size-option" type="button" data-catalog-size="XL" aria-pressed="false">XL</button>
-                    <button class="catalog-size-option" type="button" data-catalog-size="XXL" aria-pressed="false">XXL</button>
+                  <div class="catalog-size-group">
+                    <p class="catalog-size-group-label" data-i18n="catalog.controls.childSizes"></p>
+                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
+                      <button class="catalog-size-option" type="button" data-catalog-size="CXXS" aria-pressed="false">CXXS</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="CXS" aria-pressed="false">CXS</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="CS" aria-pressed="false">CS</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="CM" aria-pressed="true">CM</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="CL" aria-pressed="false">CL</button>
+                    </div>
+                  </div>
+                  <div class="catalog-size-group">
+                    <p class="catalog-size-group-label" data-i18n="catalog.controls.adultSizes"></p>
+                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
+                      <button class="catalog-size-option" type="button" data-catalog-size="AXS" aria-pressed="false">AXS</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="AS" aria-pressed="false">AS</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="AM" aria-pressed="false">AM</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="AL" aria-pressed="false">AL</button>
+                      <button class="catalog-size-option" type="button" data-catalog-size="AXXL" aria-pressed="false">AXXL</button>
+                    </div>
                   </div>
                 </div>
 
@@ -310,6 +307,10 @@
                   ></button>
                 </div>
               </div>
+
+              <button class="catalog-mobile-details-toggle" type="button" data-catalog-details-toggle aria-expanded="false">
+                <span data-i18n="catalog.controls.details"></span>
+              </button>
             </article>
           </div>
         </section>
@@ -318,9 +319,40 @@
           data-page="contact"
           data-i18n-attr="aria-label:pages.contact"
           hidden
-        ></section>
+        >
+          <div class="contact-page">
+            <header class="contact-intro">
+              <p class="section-kicker" data-i18n="contact.kicker"></p>
+              <h1 class="section-title contact-title" data-i18n="contact.title"></h1>
+              <p class="section-lead" data-i18n="contact.lead"></p>
+            </header>
+
+            <div class="contact-grid">
+              <article class="contact-card">
+                <h2 data-i18n="contact.contactMethods.title"></h2>
+                <a class="contact-link" href="https://wa.me/" target="_blank" rel="noreferrer" data-i18n="contact.contactMethods.whatsapp"></a>
+                <a class="contact-link" href="mailto:hello@qinti.com" data-i18n="contact.contactMethods.email"></a>
+              </article>
+
+              <article class="contact-card">
+                <h2 data-i18n="contact.visit.title"></h2>
+                <p class="contact-detail" data-i18n="contact.visit.address"></p>
+                <p class="contact-detail" data-i18n="contact.visit.hours"></p>
+                <p class="contact-detail" data-i18n="contact.visit.social"></p>
+                <div class="contact-map" aria-label="Map placeholder">
+                  <span data-i18n="contact.visit.map"></span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
+    <div class="floating-actions" aria-label="Quick contact">
+      <a class="floating-action floating-action--email" href="mailto:hello@qinti.com" data-i18n="contact.floating.email"></a>
+      <button class="floating-action floating-action--whatsapp" type="button" data-floating-whatsapp data-i18n="contact.floating.whatsapp"></button>
+    </div>
+
     <script type="application/json" data-language-inline="english">
       {
         "meta": {

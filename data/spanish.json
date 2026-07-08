@@ -74,9 +74,12 @@
     "controls": {
       "colors": "Colores",
       "sizes": "Tallas",
+      "childSizes": "Ninos",
+      "adultSizes": "Adultos",
       "customize": "Personalizar Mi Diseno",
       "customizationPlaceholder": "Describe tus ideas, colores, inspiracion o pedidos especiales.",
-      "order": "Pedido por WhatsApp"
+      "order": "Pedido por WhatsApp",
+      "details": "Detalles"
     },
     "orderMessage": {
       "greeting": "Hola QINTI!",
@@ -87,6 +90,27 @@
       "size": "Talla:",
       "customization": "Personalizacion:",
       "thanks": "Gracias!"
+    }
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Una conversacion guiada por el oficio.",
+    "lead": "Escribe al atelier para trabajos personalizados, consultas de estudio o una consulta privada.",
+    "contactMethods": {
+      "title": "Contacto",
+      "whatsapp": "WhatsApp",
+      "email": "Correo"
+    },
+    "visit": {
+      "title": "Visita",
+      "address": "Lima, Peru",
+      "hours": "Lunes a viernes · 9:00 a 18:00",
+      "social": "Instagram · Facebook",
+      "map": "Marcador de mapa"
+    },
+    "floating": {
+      "email": "Correo",
+      "whatsapp": "WhatsApp"
     }
   },
   "pages": {

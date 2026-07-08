@@ -74,9 +74,12 @@
     "controls": {
       "colors": "Colors",
       "sizes": "Sizes",
+      "childSizes": "Child",
+      "adultSizes": "Adults",
       "customize": "Customize My Design",
       "customizationPlaceholder": "Describe your ideas, colors, inspiration or special requests.",
-      "order": "WhatsApp Order"
+      "order": "WhatsApp Order",
+      "details": "Details"
     },
     "orderMessage": {
       "greeting": "Hello QINTI!",
@@ -87,6 +90,27 @@
       "size": "Size:",
       "customization": "Customization:",
       "thanks": "Thank you!"
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "A conversation shaped by craft.",
+    "lead": "Reach the atelier for custom work, studio questions or a private consultation.",
+    "contactMethods": {
+      "title": "Contact",
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "visit": {
+      "title": "Visit",
+      "address": "Lima, Peru",
+      "hours": "Monday to Friday · 9:00 to 18:00",
+      "social": "Instagram · Facebook",
+      "map": "Map placeholder"
+    },
+    "floating": {
+      "email": "Email",
+      "whatsapp": "WhatsApp"
     }
   },
   "pages": {

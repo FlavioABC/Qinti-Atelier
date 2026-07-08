@@ -71,6 +71,19 @@
   };
 
   const renderCategoryButtons = () => {
+    const toggle = document.querySelector("[data-catalog-category-toggle]");
+    const toggleLabel = document.querySelector("[data-catalog-category-toggle-label]");
+    const isCompetition = catalogState.category === "competition";
+
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", isCompetition ? "true" : "false");
+      toggle.textContent = isCompetition ? getLocalizedValue(CATEGORY_LABELS.competition) : getLocalizedValue(CATEGORY_LABELS.training);
+    }
+
+    if (toggleLabel) {
+      toggleLabel.textContent = isCompetition ? getLocalizedValue(CATEGORY_LABELS.competition) : getLocalizedValue(CATEGORY_LABELS.training);
+    }
+
     document.querySelectorAll("[data-catalog-category]").forEach((button) => {
       button.setAttribute(
         "aria-pressed",
@@ -163,12 +176,26 @@
   const setupCatalog = () => {
     catalogState.products = loadProducts();
 
+    const toggleButton = document.querySelector("[data-catalog-category-toggle]");
+    const detailsPanel = document.querySelector("[data-catalog-details-panel]");
+    const detailsToggle = document.querySelector("[data-catalog-details-toggle]");
+
+    const switchCategory = (nextCategory) => {
+      catalogState.category = nextCategory;
+      catalogState.colorIndex = 0;
+      renderProduct();
+      window.QintiBrushReveal.revealAll(document.querySelector('[data-page="catalog"]'));
+    };
+
+    if (toggleButton) {
+      toggleButton.addEventListener("click", () => {
+        switchCategory(catalogState.category === "training" ? "competition" : "training");
+      });
+    }
+
     document.querySelectorAll("[data-catalog-category]").forEach((button) => {
       button.addEventListener("click", () => {
-        catalogState.category = button.dataset.catalogCategory;
-        catalogState.colorIndex = 0;
-        renderProduct();
-        window.QintiBrushReveal.revealAll(document.querySelector('[data-page="catalog"]'));
+        switchCategory(button.dataset.catalogCategory);
       });
     });
 
@@ -186,6 +213,15 @@
         renderSizeButtons();
       });
     });
+
+    if (detailsToggle && detailsPanel) {
+      detailsToggle.addEventListener("click", () => {
+        const isExpanded = detailsPanel.classList.toggle("is-open");
+        detailsPanel.classList.toggle("is-collapsed", !isExpanded);
+        detailsToggle.setAttribute("aria-expanded", String(isExpanded));
+        document.querySelector(".floating-actions")?.classList.toggle("is-hidden", isExpanded);
+      });
+    }
 
     const customizeToggle = document.querySelector("[data-catalog-customize-toggle]");
     const customizationField = document.querySelector("[data-catalog-customization]");
@@ -208,6 +244,24 @@
     }
 
     window.addEventListener("qinti:languagechange", renderProduct);
+
+    window.addEventListener("qinti:pagechange", (event) => {
+      if (event.detail.page === "catalog") {
+        const detailsPanel = document.querySelector("[data-catalog-details-panel]");
+        const detailsToggle = document.querySelector("[data-catalog-details-toggle]");
+
+        if (detailsPanel) {
+          detailsPanel.classList.remove("is-open");
+          detailsPanel.classList.add("is-collapsed");
+        }
+
+        if (detailsToggle) {
+          detailsToggle.setAttribute("aria-expanded", "false");
+        }
+
+        document.querySelector(".floating-actions")?.classList.remove("is-hidden");
+      }
+    });
 
     renderProduct();
   };
