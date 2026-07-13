@@ -1,6 +1,6 @@
 (() => {
   const DEFAULT_CATEGORY = "training";
-  const DEFAULT_SIZE = "M";
+  const DEFAULT_SIZE = "CM";
   const PRODUCTS_FILE = "data/products.json";
   const CATEGORY_LABELS = {
     training: {
@@ -77,7 +77,6 @@
 
     if (toggle) {
       toggle.setAttribute("aria-pressed", isCompetition ? "true" : "false");
-      toggle.textContent = isCompetition ? getLocalizedValue(CATEGORY_LABELS.competition) : getLocalizedValue(CATEGORY_LABELS.training);
     }
 
     if (toggleLabel) {
@@ -137,7 +136,7 @@
     }
   };
 
-  const renderProduct = () => {
+  const renderProduct = ({ animateImage = false } = {}) => {
     const product = getCurrentProduct();
 
     if (!product) {
@@ -146,13 +145,8 @@
 
     const selectedColor = getSelectedColor(product);
     const image = document.querySelector("[data-catalog-image]");
-    const categoryLabel = document.querySelector("[data-catalog-category-label]");
     const name = document.querySelector("[data-catalog-name]");
     const description = document.querySelector("[data-catalog-description]");
-
-    if (categoryLabel) {
-      categoryLabel.textContent = getLocalizedValue(CATEGORY_LABELS[catalogState.category]);
-    }
 
     if (name) {
       name.textContent = getLocalizedValue(product.name);
@@ -163,8 +157,16 @@
     }
 
     if (image && selectedColor) {
-      image.hidden = false;
-      image.src = selectedColor.image;
+      const productName = getLocalizedValue(product.name);
+      const colorName = getLocalizedValue(selectedColor.name);
+
+      window.QintiBrushReveal.loadAndRevealImage({
+        image,
+        src: selectedColor.image,
+        alt: `${productName}, ${colorName}`,
+        revealRoot: image.closest("[data-brush-reveal]"),
+        animate: animateImage,
+      });
     }
 
     renderCategoryButtons();
@@ -183,8 +185,7 @@
     const switchCategory = (nextCategory) => {
       catalogState.category = nextCategory;
       catalogState.colorIndex = 0;
-      renderProduct();
-      window.QintiBrushReveal.revealAll(document.querySelector('[data-page="catalog"]'));
+      renderProduct({ animateImage: true });
     };
 
     if (toggleButton) {
@@ -202,8 +203,7 @@
     document.querySelectorAll("[data-catalog-swatch]").forEach((button) => {
       button.addEventListener("click", () => {
         catalogState.colorIndex = Number(button.dataset.colorIndex);
-        renderProduct();
-        window.QintiBrushReveal.revealAll(document.querySelector('[data-page="catalog"]'));
+        renderProduct({ animateImage: true });
       });
     });
 

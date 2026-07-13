@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <a class="skip-link" href="#app" data-i18n="navigation.skip"></a>
     <div class="site-shell">
       <header class="site-header">
         <a
@@ -47,23 +48,28 @@
         >
           <div class="home-page">
             <div class="home-visual" data-i18n-attr="aria-label:home.artworkLabel">
-              <div class="rotating-artwork" aria-hidden="true">
+              <div class="rotating-artwork" aria-hidden="true" data-emblem-mode="image" data-emblem-asset="images/home/colibri.png">
                 <div class="artwork-side artwork-side--front">
-                  <img
-                    class="artwork-image"
-                    data-home-artwork="front"
-                    src="images/home/colibri.png"
-                    alt=""
-                  >
+                  <div class="artwork-stage" data-emblem-stage data-emblem-mode="image" data-emblem-asset="images/home/colibri.png">
+                    <img
+                      class="artwork-image"
+                      data-home-artwork="front"
+                      src="images/home/colibri.png"
+                      decoding="async"
+                      alt=""
+                    >
+                  </div>
                 </div>
                 <div class="artwork-side artwork-side--back">
-                  <img
-                    class="artwork-image"
-                    data-home-artwork="back"
-                    data-src="images/home/malla1.png"
-                    data-fallback-src="images/home/colibri.png"
-                    alt=""
-                  >
+                  <div class="artwork-stage" data-emblem-stage data-emblem-mode="image" data-emblem-asset="images/home/colibri.png">
+                    <img
+                      class="artwork-image"
+                      data-home-artwork="back"
+                      src="images/home/colibri.png"
+                      decoding="async"
+                      alt=""
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,6 +105,7 @@
                     src="images/about/our-story-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -115,6 +122,7 @@
                     src="images/about/experience-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -131,6 +139,7 @@
                     src="images/about/sketch-to-performance-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -147,6 +156,7 @@
                     src="images/about/design-process-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -163,6 +173,7 @@
                     src="images/about/made-in-peru-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -179,6 +190,7 @@
                     src="images/about/designed-for-world-placeholder.webp"
                     alt=""
                     loading="lazy"
+                    decoding="async"
                   >
                 </figure>
                 <div class="about-copy">
@@ -197,27 +209,42 @@
         >
           <div class="catalog-page">
             <div class="catalog-toolbar">
-              <button class="catalog-home-button" type="button" data-nav-target="home" aria-label="Home">
-                <img src="images/home/hummingbird-placeholder.webp" alt="">
+              <button
+                class="catalog-home-button"
+                type="button"
+                data-nav-target="home"
+                data-i18n-attr="aria-label:brand.homeLabel"
+              >
+                <img src="images/home/hummingbird-placeholder.webp" decoding="async" alt="">
               </button>
-              <button class="catalog-category-toggle" type="button" data-catalog-category-toggle aria-pressed="false">
+              <button
+                class="catalog-category-toggle"
+                type="button"
+                data-catalog-category-toggle
+                aria-pressed="false"
+                data-i18n-attr="aria-label:catalog.categoryLabel"
+              >
                 <span data-catalog-category-toggle-label></span>
               </button>
             </div>
 
             <article class="catalog-product" data-i18n-attr="aria-label:catalog.productLabel">
-              <figure class="catalog-product-media" data-brush-reveal>
-                <img
-                  class="catalog-product-image"
-                  data-placeholder-image
-                  src=""
-                  alt=""
-                  loading="lazy"
-                  data-catalog-image
-                >
+              <figure class="catalog-product-media">
+                <div class="catalog-image-reveal" data-brush-reveal data-catalog-image-stage>
+                  <img
+                    class="catalog-product-image"
+                    data-placeholder-image
+                    src=""
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-catalog-image
+                  >
+                  <div class="catalog-brush-mask" data-brush-mask aria-hidden="true"></div>
+                </div>
               </figure>
 
-              <div class="catalog-product-details" data-catalog-details-panel>
+              <div class="catalog-product-details" id="catalog-details" data-catalog-details-panel>
                 <div class="catalog-product-heading">
                   <h2 data-catalog-name></h2>
                   <p data-catalog-description></p>
@@ -237,7 +264,7 @@
                   <p class="catalog-control-label" data-i18n="catalog.controls.sizes"></p>
                   <div class="catalog-size-group">
                     <p class="catalog-size-group-label" data-i18n="catalog.controls.childSizes"></p>
-                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
+                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.childSizes">
                       <button class="catalog-size-option" type="button" data-catalog-size="CXXS" aria-pressed="false">CXXS</button>
                       <button class="catalog-size-option" type="button" data-catalog-size="CXS" aria-pressed="false">CXS</button>
                       <button class="catalog-size-option" type="button" data-catalog-size="CS" aria-pressed="false">CS</button>
@@ -247,7 +274,7 @@
                   </div>
                   <div class="catalog-size-group">
                     <p class="catalog-size-group-label" data-i18n="catalog.controls.adultSizes"></p>
-                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.sizes">
+                    <div class="catalog-sizes" role="group" data-i18n-attr="aria-label:catalog.controls.adultSizes">
                       <button class="catalog-size-option" type="button" data-catalog-size="AXS" aria-pressed="false">AXS</button>
                       <button class="catalog-size-option" type="button" data-catalog-size="AS" aria-pressed="false">AS</button>
                       <button class="catalog-size-option" type="button" data-catalog-size="AM" aria-pressed="false">AM</button>
@@ -283,7 +310,14 @@
                 </div>
               </div>
 
-              <button class="catalog-mobile-details-toggle" type="button" data-catalog-details-toggle aria-expanded="false">
+              <button
+                class="catalog-mobile-details-toggle"
+                type="button"
+                data-catalog-details-toggle
+                aria-expanded="false"
+                aria-controls="catalog-details"
+                data-i18n-attr="aria-label:catalog.controls.details"
+              >
                 <span data-i18n="catalog.controls.details"></span>
               </button>
             </article>
@@ -305,7 +339,7 @@
             <div class="contact-grid">
               <article class="contact-card">
                 <h2 data-i18n="contact.contactMethods.title"></h2>
-                <a class="contact-link" href="https://wa.me/" target="_blank" rel="noreferrer" data-i18n="contact.contactMethods.whatsapp"></a>
+                <a class="contact-link" href="https://wa.me/51993114149" target="_blank" rel="noreferrer" data-i18n="contact.contactMethods.whatsapp"></a>
                 <a class="contact-link" href="mailto:hello@qinti.com" data-i18n="contact.contactMethods.email"></a>
               </article>
 
@@ -314,7 +348,7 @@
                 <p class="contact-detail" data-i18n="contact.visit.address"></p>
                 <p class="contact-detail" data-i18n="contact.visit.hours"></p>
                 <p class="contact-detail" data-i18n="contact.visit.social"></p>
-                <div class="contact-map" aria-label="Map placeholder">
+                <div class="contact-map" role="img" data-i18n-attr="aria-label:contact.visit.map">
                   <span data-i18n="contact.visit.map"></span>
                 </div>
               </article>
@@ -323,7 +357,7 @@
         </section>
       </main>
     </div>
-    <div class="floating-actions" aria-label="Quick contact">
+    <div class="floating-actions" data-i18n-attr="aria-label:contact.floating.label">
       <a class="floating-action floating-action--email" href="mailto:hello@qinti.com" data-i18n="contact.floating.email"></a>
       <button class="floating-action floating-action--whatsapp" type="button" data-floating-whatsapp data-i18n="contact.floating.whatsapp"></button>
     </div>
@@ -341,6 +375,7 @@
         },
         "navigation": {
           "label": "Primary navigation",
+          "skip": "Skip to content",
           "home": "Home",
           "about": "About",
           "catalog": "Catalog",
@@ -405,9 +440,12 @@
           "controls": {
             "colors": "Colors",
             "sizes": "Sizes",
+            "childSizes": "Child",
+            "adultSizes": "Adults",
             "customize": "Customize My Design",
             "customizationPlaceholder": "Describe your ideas, colors, inspiration or special requests.",
-            "order": "WhatsApp Order"
+            "order": "WhatsApp Order",
+            "details": "Details"
           },
           "orderMessage": {
             "greeting": "Hello QINTI!",
@@ -418,6 +456,28 @@
             "size": "Size:",
             "customization": "Customization:",
             "thanks": "Thank you!"
+          }
+        },
+        "contact": {
+          "kicker": "Contact",
+          "title": "A conversation shaped by craft.",
+          "lead": "Reach the atelier for custom work, studio questions or a private consultation.",
+          "contactMethods": {
+            "title": "Contact",
+            "whatsapp": "WhatsApp",
+            "email": "Email"
+          },
+          "visit": {
+            "title": "Visit",
+            "address": "Lima, Peru",
+            "hours": "Monday to Friday - 9:00 to 18:00",
+            "social": "Instagram · Facebook",
+            "map": "Map placeholder"
+          },
+          "floating": {
+            "label": "Quick contact",
+            "email": "Email",
+            "whatsapp": "WhatsApp"
           }
         },
         "pages": {
@@ -441,6 +501,7 @@
         },
         "navigation": {
           "label": "Navegacion principal",
+          "skip": "Saltar al contenido",
           "home": "Inicio",
           "about": "Nosotros",
           "catalog": "Catalogo",
@@ -505,9 +566,12 @@
           "controls": {
             "colors": "Colores",
             "sizes": "Tallas",
+            "childSizes": "Ninos",
+            "adultSizes": "Adultos",
             "customize": "Personalizar Mi Diseno",
             "customizationPlaceholder": "Describe tus ideas, colores, inspiracion o pedidos especiales.",
-            "order": "Pedido por WhatsApp"
+            "order": "Pedido por WhatsApp",
+            "details": "Detalles"
           },
           "orderMessage": {
             "greeting": "Hola QINTI!",
@@ -518,6 +582,28 @@
             "size": "Talla:",
             "customization": "Personalizacion:",
             "thanks": "Gracias!"
+          }
+        },
+        "contact": {
+          "kicker": "Contacto",
+          "title": "Una conversacion guiada por el oficio.",
+          "lead": "Escribe al atelier para trabajos personalizados, consultas de estudio o una consulta privada.",
+          "contactMethods": {
+            "title": "Contacto",
+            "whatsapp": "WhatsApp",
+            "email": "Correo"
+          },
+          "visit": {
+            "title": "Visita",
+            "address": "Lima, Peru",
+            "hours": "Lunes a viernes - 9:00 a 18:00",
+            "social": "Instagram · Facebook",
+            "map": "Marcador de mapa"
+          },
+          "floating": {
+            "label": "Contacto rapido",
+            "email": "Correo",
+            "whatsapp": "WhatsApp"
           }
         },
         "pages": {

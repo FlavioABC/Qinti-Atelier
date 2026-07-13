@@ -1,5 +1,6 @@
 (() => {
-  const WHATSAPP_URL = "https://wa.me/";
+  const WHATSAPP_NUMBER = "51993114149";
+  const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
   const getMessageText = (key) => {
     return window.QintiI18n.getText(`catalog.orderMessage.${key}`);

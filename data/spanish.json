@@ -10,6 +10,7 @@
   },
   "navigation": {
     "label": "Navegacion principal",
+    "skip": "Saltar al contenido",
     "home": "Inicio",
     "about": "Nosotros",
     "catalog": "Catalogo",
@@ -109,6 +110,7 @@
       "map": "Marcador de mapa"
     },
     "floating": {
+      "label": "Contacto rapido",
       "email": "Correo",
       "whatsapp": "WhatsApp"
     }

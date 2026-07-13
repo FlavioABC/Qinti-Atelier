@@ -10,6 +10,7 @@
   },
   "navigation": {
     "label": "Primary navigation",
+    "skip": "Skip to content",
     "home": "Home",
     "about": "About",
     "catalog": "Catalog",
@@ -109,6 +110,7 @@
       "map": "Map placeholder"
     },
     "floating": {
+      "label": "Quick contact",
       "email": "Email",
       "whatsapp": "WhatsApp"
     }

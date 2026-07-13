@@ -78,15 +78,6 @@
       });
     });
 
-    document.querySelectorAll(".nav-link[data-nav-target]").forEach((control) => {
-      const key = `navigation.${control.dataset.navTarget}`;
-      const value = getNestedValue(dictionary, key);
-
-      if (value) {
-        control.textContent = value;
-      }
-    });
-
     document.querySelectorAll("[data-language-option]").forEach((control) => {
       control.setAttribute(
         "aria-pressed",

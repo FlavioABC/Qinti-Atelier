@@ -118,7 +118,3 @@
   display: grid;
   gap: 12px;
 }
-
-.catalog-product-details.is-collapsed {
-  display: none;
-}
